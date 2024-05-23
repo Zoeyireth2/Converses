@@ -1,0 +1,175 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f4;
+}
+
+.menu {
+  max-width: 1400px;
+  padding: 3%;
+  margin: 0 auto;
+
+}
+
+nav {
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+
+nav .logo h1{
+color: #ced4d9;
+transition: transform 0.3s;
+font-size: 70px;
+padding-left: 20px;
+}
+nav .logo a{
+    text-decoration: none;
+    color: #ced4d9;
+
+}
+nav .logo h1:hover{
+
+    color: #000;
+    transform: translateY(-20px);
+}
+
+nav ul{
+  list-style: none;
+
+}
+
+nav ul li{
+ display: inline-block;
+}
+
+nav ul li a{
+  padding: 10px 20px ;
+  text-decoration: none;
+  font-size: 19px;
+  color: #000;
+  border-radius: 30px ;
+  transition: 0.6s;
+}
+nav ul li a:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.special-offers {
+    margin-top: 40px;
+}
+
+.special-offers h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.product-card {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin-bottom: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.product-image img {
+    width: 400px;
+    height: auto;
+}
+
+.product-info {
+    padding: 20px;
+}
+
+.product-info h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.product-info p {
+    color: #777;
+    margin-bottom: 15px;
+}
+
+.rating i {
+    font-size: 1.2em;
+}
+
+.discounted-price {
+    margin-bottom: 15px;
+}
+
+.old-price {
+    text-decoration: line-through;
+    color: #777;
+    margin-right: 10px;
+}
+
+.new-price {
+    color: #333;
+    font-weight: bold;
+}
+
+.buy-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.buy-button:hover {
+    background-color: #555;
+}
+
+      footer {
+        width: 100%;
+        background: #ccc;
+        height: 70px;
+          display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        padding-right: 20px;
+      }
+      footer i{
+        margin-right: 10px;
+      }
+      footer p{
+        margin-right: 20px;
+      }
+
+      footer a{
+        text-decoration: none;
+          transition: color 0.2s ease-out;
+          transition: transform 0,2s;
+          font-size: 20px;
+          color: #000;
+
+      }
+
+      footer a:hover{
+       color: white;
+      transform: translateY(-10px);
+      font-size: 25px;
+
+      }

@@ -1,0 +1,195 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+    
+    body{
+    
+        background: #fff;
+      font-family: 'Roboto', sans-serif;
+    
+    }
+    
+    
+    .menu {
+      max-width: 1400px;
+      padding: 3%;
+      margin: 0 auto;
+    
+    }
+    
+    nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    }
+    
+    nav .logo img{
+      width: 50%;
+      height: 40px;
+    }
+    
+    nav ul{
+      list-style: none;
+    
+    }
+    
+    nav ul li{
+     display: inline-block;
+    }
+    
+    nav ul li a{
+      padding: 10px 20px ;
+      text-decoration: none;
+      font-size: 19px;
+      color: #000;
+      border-radius: 30px ;
+      transition: 0.6s;
+    }
+    nav ul li a:hover {
+      background-color: #000;
+      color: #fff;
+    }
+    
+    /*******slider*****/
+    .slider-frame {
+        padding-top: 15px ;
+        width: 1280px;
+        height: auto; 
+        margin:50px auto 0;
+        overflow: hidden;
+        z-index: 4;
+    }
+    
+    .slider-frame ul {
+        display: flex;
+        padding: 0;
+        width: 400%;
+        
+        animation: slide 10s infinite alternate ease-in-out;
+    }
+    
+    .slider-frame li {
+        width: 100%;
+        list-style: none;
+    }
+    
+    .slider-frame img {
+        width: 100%;
+        height: 400px;
+    
+        
+       }
+    
+    @keyframes slide {
+        0% {margin-left: 0;}
+        20% {margin-left: 0;}
+        
+        25% {margin-left: -100%;}
+        45% {margin-left: -100%;}
+        
+        50% {margin-left: -200%;}
+        70% {margin-left: -200%;}
+        
+        75% {margin-left: -300%;}
+        100% {margin-left: -300%;}
+    }
+    
+    /****compra***/ 
+    
+    .compras {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                align-items: center;
+                overflow: hidden;
+                padding-left: 30px;
+            }
+    
+            .compras h2 {
+                margin: 10px 0;
+            }
+    
+            .compras img {
+                max-width: 100%;
+                height: auto;
+            }
+    
+            .cajita {
+              flex: 1 1 200px;
+                text-align: center;
+                margin: 10px;
+            }
+    
+            .compras-contenedor h2 {
+              padding-bottom: 25px;
+              text-align: left;
+              padding-left: 10px;
+    
+            }
+    
+    /************Categorias de la ropa********/
+       .categorias {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-wrap: wrap;
+                text-align: center;
+            }
+    
+            .categoria-item {
+                margin: 10px;
+                transition: transform 0.3s;
+            }
+    
+            .categorias img {
+                max-width: 100%;
+                height: auto;
+            }
+    
+            .categorias h1 {
+                margin-top: 10px;
+                font-size: 60px;
+                color: black;
+    
+            }
+    
+            
+                 .categoria-item:hover {
+                transform: translateY(-10px); 
+            }
+    
+    
+          /**********foooter***********/
+          footer {
+            width: 100%;
+            background: #ccc;
+            height: 70px;
+              display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            padding-right: 20px;
+          }
+          footer i{
+            margin-right: 10px;
+          }
+          footer p{
+            margin-right: 20px;
+          }
+    
+          footer a{
+            text-decoration: none;
+              transition: color 0.2s ease-out;
+              transition: transform 0,2s;
+              font-size: 20px;
+              color: #000;
+    
+          }
+    
+          footer a:hover{
+           color: white;
+          transform: translateY(-10px);
+          font-size: 25px;
+    
+          }
